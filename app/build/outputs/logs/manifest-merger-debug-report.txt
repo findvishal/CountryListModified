@@ -4,6 +4,7 @@ ADDED from C:\Users\visha\Downloads\CountryList\CountryList\app\src\main\Android
 INJECTED from C:\Users\visha\Downloads\CountryList\CountryList\app\src\main\AndroidManifest.xml:2:1-22:12
 INJECTED from C:\Users\visha\Downloads\CountryList\CountryList\app\src\main\AndroidManifest.xml:2:1-22:12
 INJECTED from C:\Users\visha\Downloads\CountryList\CountryList\app\src\main\AndroidManifest.xml:2:1-22:12
+MERGED from [androidx.databinding:viewbinding:4.1.2] C:\Users\visha\.gradle\caches\transforms-2\files-2.1\9f8cfd3eac1f76be3253c1891f484fcd\jetified-viewbinding-4.1.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.6.0] C:\Users\visha\.gradle\caches\transforms-2\files-2.1\931064dd1dabd9855818e4ef27763d7d\jetified-core-ktx-1.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\visha\.gradle\caches\transforms-2\files-2.1\2de5a6b17c59cfa51c3f364f5a8e2176\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\visha\.gradle\caches\transforms-2\files-2.1\90a09e06d155f3c8b1250bdc2a9e4990\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
@@ -114,6 +115,8 @@ uses-sdk
 INJECTED from C:\Users\visha\Downloads\CountryList\CountryList\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\visha\Downloads\CountryList\CountryList\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\visha\Downloads\CountryList\CountryList\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:4.1.2] C:\Users\visha\.gradle\caches\transforms-2\files-2.1\9f8cfd3eac1f76be3253c1891f484fcd\jetified-viewbinding-4.1.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.1.2] C:\Users\visha\.gradle\caches\transforms-2\files-2.1\9f8cfd3eac1f76be3253c1891f484fcd\jetified-viewbinding-4.1.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.6.0] C:\Users\visha\.gradle\caches\transforms-2\files-2.1\931064dd1dabd9855818e4ef27763d7d\jetified-core-ktx-1.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.6.0] C:\Users\visha\.gradle\caches\transforms-2\files-2.1\931064dd1dabd9855818e4ef27763d7d\jetified-core-ktx-1.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\visha\.gradle\caches\transforms-2\files-2.1\2de5a6b17c59cfa51c3f364f5a8e2176\material-1.4.0\AndroidManifest.xml:20:5-44

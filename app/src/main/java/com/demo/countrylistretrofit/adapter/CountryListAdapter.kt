@@ -31,12 +31,15 @@ class CountryListAdapter(val activity: Activity): RecyclerView.Adapter<CountryLi
     }
 
     override fun onBindViewHolder(holder: CountryListAdapter.MyViewHolder, position: Int) {
-        holder.bind(countryList?.get(position)!!, activity)
+        countryList?.let { it[position] }?.let { holder.bind(it, activity) }
     }
 
     override fun getItemCount(): Int {
-        if(countryList == null)return 0
-        else return countryList?.size!!
+        // if(countryList == null)return 0
+        // else return countryList?.size!!
+        return countryList?.let {
+            it.size
+        }?:0
     }
 
     class MyViewHolder(view : View): RecyclerView.ViewHolder(view){

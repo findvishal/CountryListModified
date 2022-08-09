@@ -1,2 +1,6 @@
+com/demo/countrylistretrofit/databinding/ActivityMainBinding.java
+ com.demo.countrylistretrofit.databinding.ActivityMainBinding
+com/demo/countrylistretrofit/databinding/CountryListRowBinding.java
+ com.demo.countrylistretrofit.databinding.CountryListRowBinding
 com/demo/countrylistretrofit/BuildConfig.java
  com.demo.countrylistretrofit.BuildConfig
