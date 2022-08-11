@@ -1,20 +1,19 @@
 package com.demo.countrylistretrofit.adapter
 
 import android.app.Activity
-import android.net.Uri
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.demo.countrylistretrofit.R
 import com.demo.countrylistretrofit.data.CountryModel
-import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou
-import kotlinx.android.synthetic.main.country_list_row.view.*
+import com.demo.countrylistretrofit.databinding.CountryListRowBinding
 
 class CountryListAdapter(val activity: Activity): RecyclerView.Adapter<CountryListAdapter.MyViewHolder>() {
 
     private var countryList: List<CountryModel>? = null
+
+
 
 
     fun setCountryList(countryList: List<CountryModel>?) {
@@ -23,11 +22,13 @@ class CountryListAdapter(val activity: Activity): RecyclerView.Adapter<CountryLi
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
-        viewType: Int
-    ): CountryListAdapter.MyViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.country_list_row, parent, false)
+        viewType: Int,
 
-        return MyViewHolder(view)
+    ): CountryListAdapter.MyViewHolder {
+        val binding=CountryListRowBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+      //  val view = LayoutInflater.from(parent.context).inflate(R.layout.country_list_row, parent, false)
+
+        return MyViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: CountryListAdapter.MyViewHolder, position: Int) {
@@ -42,21 +43,21 @@ class CountryListAdapter(val activity: Activity): RecyclerView.Adapter<CountryLi
         }?:0
     }
 
-    class MyViewHolder(view : View): RecyclerView.ViewHolder(view){
-        val flagImage = view.flagImage
-        val tvName = view.tvName
-        val tvCapital = view.tvCapital
-        val tvRegion = view.tvRegion
+    class MyViewHolder(val binding: CountryListRowBinding): RecyclerView.ViewHolder(binding.root){
+       // val flagImage = binding.flagImage
+       // val tvName = binding.tvName
+       // val tvCapital = binding.tvCapital
+      //  val tvRegion = binding.tvRegion
 
         fun bind(data: CountryModel, activity: Activity) {
-            tvName.text = data.name +"(" + data.alpha2Code+")"
-            tvCapital.text = "Capital: "+data.capital
-            tvRegion.text = "Region: "+data.region
+            binding.tvName.text = data.name +"(" + data.alpha2Code+")"
+            binding.tvCapital.text = "Capital: "+data.capital
+            binding.tvRegion.text = "Region: "+data.region
 
-            Glide.with(flagImage)
+            Glide.with(binding.flagImage)
                 .load(data.flags.png)
                 .circleCrop()
-                .into(flagImage)
+                .into(binding.flagImage)
 
         }
     }
